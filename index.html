@@ -192,30 +192,10 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>A geographic map and barplot show that there are considerable differences in the healthcare expenditures and healthcare quality between countries.</li>
 <li>The scatterplot displays a relation between expenditure and healthcare quality. That means that in countries where more money is spent for healthcare, the score on consumer friendliness is better (or inverse, if less is spent, friendliness is worse). The point sizes display the population for each country. At first sight, there seems nothing special, i.e., small and large countries are on both sides of the spectrum.</li>
 </ul>
-<head>
-    <title>Basic Embed</title>
-    
-    <script type="text/javascript" 
-	    src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
-    <script type="text/javascript">
-        function initViz() {
-            var containerDiv = document.getElementById("vizContainer"),
-                url = "http://public.tableau.com/views/Visualizing-European-healthcare/HCE_n1",
-                options = {
-                    hideTabs: true,
-                    onFirstInteractive: function () {
-                        console.log("Run this code when the viz has finished loading.");
-                    }
-                };
-            
-            var viz = new tableau.Viz(containerDiv, url, options); 
-            // Create a viz object and embed it in the container div.
-        }
-    </script>
-</head>
 
-<body onload="initViz();">
-    <div id="vizContainer" style="width:1400px; height:1100px;"></div>    
+
+<body>
+%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Visualizing-European-healthcare&#47;HCE_n1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Vi&#47;Visualizing-European-healthcare&#47;HCE_n1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1492290723769');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 </body>
 
 </div>
